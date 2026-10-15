@@ -1,6 +1,8 @@
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
-  (window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : '/api');
+  (window.location.hostname === 'localhost'
+    ? 'http://localhost:5000/api'
+    : 'https://looplearn-backend-w11x.onrender.com/api');
 
 // In-memory token storage (never localStorage for security)
 let inMemoryToken = null;
