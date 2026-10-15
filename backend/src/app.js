@@ -17,6 +17,8 @@ app.use(helmet());
 // CORS configuration
 const allowedOrigins = [
   env.FRONTEND_URL,
+  'https://loop-learn-tan.vercel.app',
+  'https://looplearn.netlify.app',
   'http://localhost:5173',
   'http://127.0.0.1:5173',
 ].filter(Boolean);
